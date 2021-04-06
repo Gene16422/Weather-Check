@@ -32,9 +32,8 @@ THEN I am again presented with current and future conditions for that city
 
 ## Mock-Up
 
-The following image shows the web application's appearance and functionality:
+![image](https://user-images.githubusercontent.com/79607952/113650800-b21bac80-9645-11eb-8690-8532475ab97d.png)
 
-![The weather app includes a search option, a list of cities, and a five-day forecast and current weather conditions for Atlanta.](./Assets/06-server-side-apis-homework-demo.png)
 
 ## Grading Requirements
 
