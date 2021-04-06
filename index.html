@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Check</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ca89a4b9f5.js" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+
+</head>
+
+<body>
+    
+    <header class="header">
+        <h1>Weather Check</h1>
+    </header>
+
+    <!--Search bar and history -->
+    <div class="container-fluid">
+        <div class="row">
+            <aside id="sideMenu" class="sidebar col-3">
+                <h3>Search for City:</h3>
+                <form id="searchForm" class="form-inline">
+                    
+                    <input type="text" id="searchTermEntry" class="form-control"> &nbsp;
+                    <button type="button" class="btn btn-primary" id="button-addon2"><i class="far fa-search"></i></button>
+
+                </form>
+                <hr>
+                <div class="card">
+                    <!-- List of previous searches -->
+                    <h4 class="card-header">Recent Searches:</h4>
+                    <div id="resultList" class="list-group-flush">
+                        
+                    </div>
+                </div>
+            </aside>
+                 <!-- Weather display -->
+            <main class="dashboard col-9">
+               
+                <div class="row">
+                    <section id="currentWeather" class="card m-5 col-12">
+                        <!-- weather data for current / most recent location-->
+                        <div class="card-body">
+                            <h2 id="currentWeatherHeading" class="card-title">
+                                <span id="currentWeatherCity">City Name</span> &nbsp; <span
+                                    id="currentWeatherDate"></span> &nbsp; <img id="currentWeatherIcon"></img>
+                            </h2>
+                            <p id="currentTemp">Temperature: <span id="currentTempSpan"></span></p>
+                            <p id="currentHumidityLine">Humidity: <span id="currentHumiditySpan"></span></p>
+                            <p id="currentWindLine">Wind Speed: <span id="currentWindSpan"></span></p>
+                            <p id="currentUVLine">UV Index: <span id="currentUVSpan"></span></p>
+                        </div>
+                    </section>
+                </div>
+                <div class="row">
+                    <section class="card m-5 col-12">
+                        <!-- 5-day forcasts -->
+                        <div class="card-body">
+                            <h3 class="card-title">5-Day Forecast</h3>
+                            <div class="row" id="fiveDayCardsRow">
+                                <!-- dynamically generated five day forecasts go here-->
+                            </div>
+                        </div>
+                    </section>
+
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- link to custom script -->
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+header {
+    background-color:blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#sideMenu {
+    background-color: rgb(233, 239, 241);
+    height: flex;
+}
+#sideMenu ul li {
+    list-style: none;
+    text-transform: capitalize;
+}
+
+#currentUVSpan {
+    padding: 5px;
+}
